@@ -17,4 +17,16 @@ public class TriangleTest {
         Triangle triangle = new Triangle();
         assertEquals("********", triangle.drawHorizontalLine(8));
     }
+
+    @Test
+    public final void drawVerticalLine(){
+        Triangle triangle = new Triangle();
+        assertEquals("*\n*\n*", triangle.drawVerticalLine(3));
+    }
+
+    @Test
+    public final void drawRightTriangle(){
+        Triangle triangle = new Triangle();
+        assertEquals("*\n**\n***", triangle.drawRightTriangle(3));
+    }
 }

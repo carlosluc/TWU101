@@ -9,6 +9,6 @@ public class DiamondTest {
     @Test
     public final void drawIsoscelesTriangle(){
         Diamond diamond = new Diamond();
-        assertEquals("*", diamond.drawIsoscelesTriangle(3));
+        assertEquals("  *  \n *** \n *****", diamond.drawIsoscelesTriangle(3));
     }
 }
